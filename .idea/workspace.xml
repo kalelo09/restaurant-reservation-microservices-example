@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="978cd80a-96b7-4e15-b833-2e5742139cc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -63,7 +64,7 @@
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantControllerIntegrationTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantServiceTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/resources/contracts/reservationToRestaurantContracts.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729627456134</updated>
-      <workItem from="1729627457573" duration="6306000" />
+      <workItem from="1729627457573" duration="7134000" />
     </task>
     <servers />
   </component>
@@ -206,7 +207,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
