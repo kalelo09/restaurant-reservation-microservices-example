@@ -1,4 +1,4 @@
-package com.restaurantreservation.reservation;
+package com.restaurantreservation.restaurant;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -28,8 +28,7 @@ import org.springframework.web.client.RestTemplate;
  * @see Configuration
  */
 @Configuration
-public class ReservationConfig {
-
+public class RestaurantLoadBalancerConfig {
     /**
      * Creates a {@link RestTemplate} bean for making RESTful HTTP requests.
      *

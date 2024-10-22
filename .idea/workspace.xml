@@ -5,32 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="978cd80a-96b7-4e15-b833-2e5742139cc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/156c1c5239ae6cef91ec0d285308d285c4d8f518" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30cb36b71c51796689162b7eabdef7dc60ce4e4f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3988b51e3ac69030cc7235f13eb6f0c07818e4a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/592ce93bbfa77531d478fb442224a48cbeeaa96b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/595ea09e6bf8f92057ebe1f54bd06238b7980105" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/844aa7dd3dd6b320724b4784d59ea99009e99c6c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b35fb259700edad0265472bee63601a8e9a7bbf9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf97409f15e1b1563cdb56f88001898eb5950653" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6a2269acbf90e48ef517ed1f9b0e13f148ddb91" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f97b60430278396fe5c29ede9716189742721232" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/5/156c1c5239ae6cef91ec0d285308d285c4d8f518" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/30cb36b71c51796689162b7eabdef7dc60ce4e4f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/9/3988b51e3ac69030cc7235f13eb6f0c07818e4a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/9/592ce93bbfa77531d478fb442224a48cbeeaa96b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/9/595ea09e6bf8f92057ebe1f54bd06238b7980105" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/4/844aa7dd3dd6b320724b4784d59ea99009e99c6c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/3/b35fb259700edad0265472bee63601a8e9a7bbf9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bf97409f15e1b1563cdb56f88001898eb5950653" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/6/e6a2269acbf90e48ef517ed1f9b0e13f148ddb91" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f97b60430278396fe5c29ede9716189742721232" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -41,7 +15,6 @@
       <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/restaurantreservation/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/mvnw" afterDir="false" />
@@ -52,8 +25,8 @@
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/exception/ResourceNotFoundException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/Reservation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationLoadBalancerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationRequest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/reservation/src/main/java/com/restaurantreservation/reservation/ReservationService.java" afterDir="false" />
@@ -77,6 +50,7 @@
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/Restaurant.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantLoadBalancerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantRequest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantService.java" afterDir="false" />
@@ -89,29 +63,22 @@
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantControllerIntegrationTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantServiceTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/resources/contracts/reservationToRestaurantContracts.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20ada859c75073013f9e4a2932c99eba7e9824df" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20ada859c75073013f9e4a2932c99eba7e9824df" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb77a1940e8318c6ce200a7f6bf7c883cadecff" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb77a1940e8318c6ce200a7f6bf7c883cadecff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59074cbc72351ce3c1b9e67e960407bf6b53d7b0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59074cbc72351ce3c1b9e67e960407bf6b53d7b0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63d34f350a77521f480ed1c75569921f23f8c7dd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63d34f350a77521f480ed1c75569921f23f8c7dd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/8334baf74f924a634b5f53f60c5fb2c212c56f3d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/8334baf74f924a634b5f53f60c5fb2c212c56f3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a5b344bf9d43437ec6f59d6e0350970b9069df1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a5b344bf9d43437ec6f59d6e0350970b9069df1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b39ae52d769ea03b699b5602439afd875433c8a7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b39ae52d769ea03b699b5602439afd875433c8a7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c03dbc823c3f8da35a8b25874b6b1dd25aee9d3a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c03dbc823c3f8da35a8b25874b6b1dd25aee9d3a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c16a179fc827ed8d03fc8bd2175d74b9c5115ea3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c16a179fc827ed8d03fc8bd2175d74b9c5115ea3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce958a611449f01ee9badc4e925587e74ea45cf8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce958a611449f01ee9badc4e925587e74ea45cf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea6ab1fa71279edb8b86b1ac1db50c61a9f26461" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea6ab1fa71279edb8b86b1ac1db50c61a9f26461" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestaurantReservationServices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RestaurantReservationServices.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/test/java/com/restaurantreservation/clients/ClientsApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/restaurant" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -216,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729627456134</updated>
-      <workItem from="1729627457573" duration="2560000" />
+      <workItem from="1729627457573" duration="6306000" />
     </task>
     <servers />
   </component>
@@ -226,11 +193,38 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="8817ec4d-140f-4ebe-be2d-918c335f3015">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="8817ec4d-140f-4ebe-be2d-918c335f3015" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
