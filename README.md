@@ -85,14 +85,14 @@ Spring Cloud Contract is preferred over Testcontainers for integration testing a
 3. **Start the Restaurant Service**:
    - Navigate to the restaurant-service module:
      ```bash
-     cd restaurant-service
+     cd restaurant
    - Run:
      ```bash
      mvn spring-boot:run
 4. **Start the Reservation Service**:
    - Navigate to the reservation-service module:
      ```bash
-     cd reservation-service
+     cd reservation
    - Run:
      ```bash
      mvn spring-boot:run
