@@ -98,12 +98,9 @@ Spring Cloud Contract is preferred over Testcontainers for integration testing a
 
 ## Testing the Application
 
-  - **Unit Testing**: The project uses JUnit 5 and Mockito for unit testing. Run the tests with:
+  - **Unit Testing**: Run the tests with:
      ```bash
      mvn test
-  - **Contract Testing**: The project employs Spring Cloud Contract for testing the interactions between services. You can run the contract tests using:
-     ```bash
-     mvn contractVerifications
 
 ## Users and Roles
 
