@@ -1,9 +1,9 @@
 
 j
-java:S1192"HDefine a constant instead of duplicating this literal "message" 6 times.(âıô±úÿÿÿÿ8ÊŠ¸å©2
+java:S1192)"HDefine a constant instead of duplicating this literal "message" 6 times.(âıô±úÿÿÿÿ8Œô±¤«2
 U
-java:S16113"3Remove the parentheses around the "error" parameter(ı£—Ôúÿÿÿÿ8ÕŠ¸å©2
+java:S1611b"3Remove the parentheses around the "error" parameter(ı£—Ôúÿÿÿÿ8™ô±¤«2
+‹
+java:S6201w"iReplace this instanceof check and cast with 'instanceof ConstraintViolationException validationException'(€ÚÔÌşÿÿÿÿ8ô±¤«2
 K
-java:S1481D".Remove this unused "fieldName" local variable.(°¾é´8ÖŠ¸å©2
-N
-java:S1481E"1Remove this unused "errorMessage" local variable.(ÙÀ­ç8ÖŠ¸å©2
+java:S1481z".Remove this unused "fieldName" local variable.(°¾é´8Ÿô±¤«2
