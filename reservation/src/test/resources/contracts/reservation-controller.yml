@@ -1,0 +1,124 @@
+- description: Should register a reservation successfully
+  request:
+    method: POST
+    url: /api/v1/reservations
+    body:
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-21" # example date
+    headers:
+      Content-Type: application/json
+  response:
+    status: 200
+    body:
+      id: 1
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-21"
+    headers:
+      Content-Type: application/json
+
+- description: Should throw an exception when trying to register with no availability
+  request:
+    method: POST
+    url: /api/v1/reservations
+    body:
+      restaurantId: 1
+      customerName: "Jane Doe"
+      reservationDate: "2024-10-21"
+    headers:
+      Content-Type: application/json
+  response:
+    status: 503
+    body:
+      message: "No tables available"
+    headers:
+      Content-Type: application/json
+
+- description: Should return a reservation by ID
+  request:
+    method: GET
+    url: /api/v1/reservations/1
+  response:
+    status: 200
+    body:
+      id: 1
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-21"
+    headers:
+      Content-Type: application/json
+
+- description: Should return 404 when reservation not found
+  request:
+    method: GET
+    url: /api/v1/reservations/999
+  response:
+    status: 404
+    body:
+      message: "Reservation not found"
+    headers:
+      Content-Type: application/json
+
+- description: Should cancel a reservation
+  request:
+    method: PUT
+    url: /api/v1/reservations/cancel/1
+  response:
+    status: 200
+    body:
+      id: 1
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-21"
+      canceled: true
+    headers:
+      Content-Type: application/json
+
+- description: Should return 404 when trying to cancel a non-existent reservation
+  request:
+    method: PUT
+    url: /api/v1/reservations/cancel/999
+  response:
+    status: 404
+    body:
+      message: "Reservation not found"
+    headers:
+      Content-Type: application/json
+
+- description: Should update a reservation
+  request:
+    method: PUT
+    url: /api/v1/reservations/1
+    body:
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-22"
+    headers:
+      Content-Type: application/json
+  response:
+    status: 200
+    body:
+      id: 1
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-22"
+    headers:
+      Content-Type: application/json
+
+- description: Should return 404 when trying to update a non-existent reservation
+  request:
+    method: PUT
+    url: /api/v1/reservations/999
+    body:
+      restaurantId: 1
+      customerName: "John Doe"
+      reservationDate: "2024-10-22"
+    headers:
+      Content-Type: application/json
+  response:
+    status: 404
+    body:
+      message: "Reservation not found"
+    headers:
+      Content-Type: application/json

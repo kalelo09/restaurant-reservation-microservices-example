@@ -1,0 +1,192 @@
+---
+description: Should check if restaurant exists
+request:
+  method: GET
+  url: /restaurants/1
+response:
+  status: 200
+  body:
+    id: 1
+    name: Test Restaurant
+    address: 123 Main St
+  headers:
+    Content-Type: application/json
+
+---
+description: Should throw exception when restaurant does not exist
+request:
+  method: GET
+  url: /restaurants/999
+response:
+  status: 404
+  body:
+    message: Restaurant not found
+  headers:
+    Content-Type: application/json
+
+---
+description: Should check restaurant availability
+request:
+  method: GET
+  url: /restaurants/1/availability
+response:
+  status: 200
+  body:
+    available: true
+  headers:
+    Content-Type: application/json
+
+---
+description: Should throw exception when no availability
+request:
+  method: GET
+  url: /restaurants/1/availability
+response:
+  status: 503
+  body:
+    message: No tables available
+  headers:
+    Content-Type: application/json
+
+---
+description: Should reserve a table
+request:
+  method: POST
+  url: /restaurants/1/reserve
+  body:
+    customerName: John Doe
+  headers:
+    Content-Type: application/json
+response:
+  status: 200
+
+---
+description: Should throw exception when reserving for an already canceled reservation
+request:
+  method: POST
+  url: /restaurants/1/cancel
+response:
+  status: 400
+  body:
+    message: Reservation already canceled
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return canceled reservation
+request:
+  method: POST
+  url: /restaurants/1/cancel
+response:
+  status: 200
+  body:
+    canceled: true
+  headers:
+    Content-Type: application/json
+
+---
+description: Should throw exception when no changes found during update
+request:
+  method: PUT
+  url: /reservations/1
+  body:
+    customerName: null
+    reservationDate: null
+  headers:
+    Content-Type: application/json
+response:
+  status: 400
+  body:
+    message: no data changes found
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return updated reservation
+request:
+  method: PUT
+  url: /reservations/1
+  body:
+    customerName: Jane Doe
+    reservationDate: 2024-10-21T15:00:00
+  headers:
+    Content-Type: application/json
+response:
+  status: 200
+  body:
+    id: 1
+    customerName: Jane Doe
+    reservationDate: 2024-10-21T15:00:00
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return reservation details
+request:
+  method: GET
+  url: /reservations/1
+response:
+  status: 200
+  body:
+    id: 1
+    customerName: John Doe
+    reservationDate: 2024-10-21T14:00:00
+  headers:
+    Content-Type: application/json
+
+---
+description: Should throw exception when reservation not found
+request:
+  method: GET
+  url: /reservations/999
+response:
+  status: 404
+  body:
+    message: Reservation with id [999] not found !!!
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return all reservations
+request:
+  method: GET
+  url: /reservations
+response:
+  status: 200
+  body:
+    - id: 1
+      customerName: John Doe
+      reservationDate: 2024-10-21T14:00:00
+    - id: 2
+      customerName: Jane Doe
+      reservationDate: 2024-10-21T15:00:00
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return reservations not canceled
+request:
+  method: GET
+  url: /reservations?canceled=false
+response:
+  status: 200
+  body:
+    - id: 1
+      customerName: John Doe
+      reservationDate: 2024-10-21T14:00:00
+  headers:
+    Content-Type: application/json
+
+---
+description: Should return reservations by customer name
+request:
+  method: GET
+  url: /reservations?customerName=John%20Doe
+response:
+  status: 200
+  body:
+    - id: 1
+      customerName: John Doe
+      reservationDate: 2024-10-21T14:00:00
+  headers:
+    Content-Type: application/json

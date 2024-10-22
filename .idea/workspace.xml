@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="978cd80a-96b7-4e15-b833-2e5742139cc4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$ReservationServiceTest.ic" NAME="ReservationServiceTest Coverage Results" MODIFIED="1729611551656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.reservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$RestaurantServiceTest.ic" NAME="RestaurantServiceTest Coverage Results" MODIFIED="1729611386738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.restaurant.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$ReservationServiceTest_cancelReservationWillCancelReservationAndReleaseRestaurantTable.ic" NAME="ReservationServiceTest.cancelReservationWillCancelReservationAndReleaseRestaurantTable Coverage Results" MODIFIED="1729461110781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.reservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$RestaurantControllerTest.ic" NAME="RestaurantControllerTest Coverage Results" MODIFIED="1729466674700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.restaurant.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$RestaurantControllerTest_testUpdateRestaurant_Success.ic" NAME="RestaurantControllerTest.testUpdateRestaurant_Success Coverage Results" MODIFIED="1728909628818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.restaurant.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$ReservationControllerIntegrationTest.ic" NAME="ReservationControllerIntegrationTest Coverage Results" MODIFIED="1729611597626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.reservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$ReservationServiceContractTest.ic" NAME="ReservationServiceContractTest Coverage Results" MODIFIED="1729471797943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.reservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$RestaurantControllerIntegrationTest.ic" NAME="RestaurantControllerIntegrationTest Coverage Results" MODIFIED="1729611501522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.restaurant.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$ReservationControllerTest.ic" NAME="ReservationControllerTest Coverage Results" MODIFIED="1729473918482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.reservation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/RestaurantReservationServices$RestaurantControllerTest_testRegisterRestaurant_Success.ic" NAME="RestaurantControllerTest.testRegisterRestaurant_Success Coverage Results" MODIFIED="1728910313027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.restaurantreservation.restaurant.*</FILTER>
+    </SUITE>
+  </component>
+</project>

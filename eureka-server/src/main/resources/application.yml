@@ -1,0 +1,13 @@
+# Configuration file for a Spring Boot application acting as a Eureka server
+
+# Server configuration
+server:
+  port: 8761  # The port on which the Eureka server will run
+
+# Eureka server configuration
+eureka:
+  client:
+    registerWithEureka: false  # Indicates that this instance will not register itself with another Eureka server
+    fetchRegistry: false  # Indicates that this instance will not fetch the registry of services from another Eureka server
+  instance:
+    hostname: localhost  # The hostname of the Eureka server instance

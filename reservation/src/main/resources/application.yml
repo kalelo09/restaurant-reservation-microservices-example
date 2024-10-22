@@ -1,0 +1,63 @@
+# Application Configuration for Spring Boot Reservation Service
+
+# Server Configuration
+server:
+  port: 8081  # Port on which the Spring Boot application will run.
+
+# Spring Framework Configuration
+spring:
+  application:
+    name: reservation  # Name of the application, used for identification in logs and monitoring.
+
+  # DataSource Configuration for Database Connection
+  datasource:
+    url: jdbc:h2:mem:reservationDb  # URL for connecting to the in-memory H2 database.
+    driver-class-name: org.h2.Driver  # Driver class name for H2 database.
+    username: 'sa'  # Username for database authentication.
+    password: ''  # Password for database authentication (empty for H2 by default).
+
+  # H2 Database Console Configuration
+  h2:
+    console:
+      enabled: true  # Enables the H2 database console for web access.
+
+  # JPA Configuration for Hibernate
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect  # Hibernate dialect for H2 database.
+        format_sql: 'true'  # Formats SQL queries in the logs for better readability.
+    hibernate:
+      ddl-auto: validate  # Hibernate will validate the schema, making sure it matches the entity models.
+    show-sql: 'true'  # Enables logging of SQL statements executed by Hibernate.
+
+  # Flyway Database Migration Configuration
+  flyway:
+    enabled: true  # Enables Flyway for database migrations.
+    baseline-on-migrate: true  # Sets the baseline version for migration.
+    locations: classpath:db.migration  # Location of migration scripts.
+
+  # Spring Cloud Contract Configuration
+  cloud:
+    contract:
+      stubrunner:
+        ids: com.restaurantreservation:restaurant-service-stubs:+:stubs:8080  # Location of stub contracts.
+        baseUrl: http://localhost:8090  # Base URL for accessing the stubs.
+
+# Management Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Exposes all management endpoints via the web.
+  endpoint:
+    health:
+      show-details: always  # Always show detailed health information.
+
+# Eureka Configuration for Service Discovery
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka  # URL of the Eureka server for service registration.
+    fetch-registry: true  # Indicates whether to fetch the registry from Eureka.
+    register-with-eureka: true  # Indicates whether to register this application with Eureka.

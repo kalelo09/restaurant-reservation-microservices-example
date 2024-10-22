@@ -1,0 +1,47 @@
+# Application Configuration for Spring Boot API Gateway
+
+# Server Configuration
+server:
+  port: 8082  # Port on which the Spring Boot API Gateway will run.
+
+# Spring Framework Configuration
+spring:
+  application:
+    name: api-gateway  # Name of the application, used for identification in logs and monitoring.
+
+  main:
+    allow-bean-definition-overriding: true  # Allows bean definitions to be overridden, useful for custom configurations.
+
+  # Spring Cloud Gateway Configuration
+  cloud:
+    gateway:
+      routes:  # Configuration for the routes handled by the API Gateway.
+        - id: reservation  # Unique identifier for the reservation route.
+          uri: lb://RESERVATION  # Load balancer URI for the reservation service.
+          predicates:  # Conditions to match incoming requests to this route.
+            - Path=/api/v1/reservations/**  # Matches all requests starting with /api/v1/reservations/.
+        - id: restaurant  # Unique identifier for the restaurant route.
+          uri: lb://RESTAURANT  # Load balancer URI for the restaurant service.
+          predicates:  # Conditions to match incoming requests to this route.
+            - Path=/api/v1/restaurants/**  # Matches all requests starting with /api/v1/restaurants/.
+
+# Eureka Configuration for Service Discovery
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka  # URL of the Eureka server for service registration.
+    fetch-registry: true  # Indicates whether to fetch the registry from Eureka.
+    register-with-eureka: true  # Indicates whether to register this application with Eureka.
+
+# JWT Configuration
+jwt:
+  secret: "securesecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecuresecure"  # Secret key used for signing JWT tokens.
+
+# Logging Configuration
+logging:
+  level:
+    web: debug  # Sets the logging level for web requests to debug, useful for detailed request logs.
+    org.springframework.cloud.gateway: debug  # Enables debug logging for Spring Cloud Gateway, helpful for route debugging.
+    org.springframework.http: debug  # Enables debug logging for HTTP requests and responses.
+    org.springframework.security: debug  # Enables debug logging for Spring Security, useful for tracking authentication and authorization.
+    feign: debug  # Enables debug logging for Feign clients, providing insights into HTTP requests made by Feign.
