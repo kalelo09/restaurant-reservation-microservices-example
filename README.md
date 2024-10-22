@@ -12,6 +12,7 @@ This project is a microservice architecture for a restaurant reservation system 
 - [Running the Application](#running-the-application)
 - [Testing the Application](#testing-the-application)
 - [Users and Roles](#users-and-roles)
+- [API Gateway Routes](#api-gateway-routes)
 - [Conclusion](#conclusion)
 
 ## Features
@@ -115,6 +116,31 @@ Two in-memory users are defined for testing:
     - Username: User
     - Password: passwordUser
     - Roles: USER
+
+## API Gateway Routes
+
+The following routes are configured in the API Gateway for accessing the microservices:
+
+### Login
+- **POST** `localhost:8082/auth/login`: Login
+
+### Restaurant Service Routes
+- **GET** `localhost:8082/api/v1/restaurants`: List all restaurants
+- **GET** `localhost:8082/api/v1/restaurants/{id}`: Retrieve restaurant details by ID
+- **GET** `localhost:8082/api/v1/restaurants/check_availability/{id}`: Checking table availability 
+- **POST** `localhost:8082/api/v1/restaurants`: Create a new restaurant
+- **PUT** `localhost:8082/api/v1/restaurants/{id}`: Update restaurant information
+
+### Reservation Service Routes
+- **GET** `localhost:8082/api/v1/reservations`: List all reservations
+- **GET** `localhost:8082/api/v1/reservations/restaurant/{idRestaurant}`: List reservations by restaurant
+- **GET** `localhost:8082/api/v1/reservations/customer/{customerName}`: List reservations by customer
+- **GET** `localhost:8082/api/v1/reservations/canceled`: List reservations canceled
+- **GET** `localhost:8082/api/v1/reservations/not_canceled`: List reservations not canceled
+- **GET** `localhost:8082/api/v1/reservations/{id}`: Retrieve reservation details by ID
+- **POST** `localhost:8082/api/v1/reservations`: Make a new reservation
+- **PUT** `localhost:8082/api/v1/reservations/{id}`: Update reservation details
+- **PUT** `localhost:8082/api/v1/reservations/cancel/{id}`: Cancel a reservation
    
 ## Conclusion
 
