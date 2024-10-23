@@ -13,6 +13,7 @@ This project is a microservice architecture for a restaurant reservation system 
 - [Testing the Application](#testing-the-application)
 - [Users and Roles](#users-and-roles)
 - [API Gateway Routes](#api-gateway-routes)
+- [Load Balancing](#load-balancing)
 - [Conclusion](#conclusion)
 
 ## Features
@@ -84,14 +85,14 @@ Spring Cloud Contract is preferred over Testcontainers for integration testing a
 3. **Start the Restaurant Service**:
    - Navigate to the restaurant-service module:
      ```bash
-     cd restaurant-service
+     cd restaurant
    - Run:
      ```bash
      mvn spring-boot:run
 4. **Start the Reservation Service**:
    - Navigate to the reservation-service module:
      ```bash
-     cd reservation-service
+     cd reservation
    - Run:
      ```bash
      mvn spring-boot:run
@@ -138,7 +139,15 @@ The following routes are configured in the API Gateway for accessing the microse
 - **POST** `localhost:8082/api/v1/reservations`: Make a new reservation
 - **PUT** `localhost:8082/api/v1/reservations/{id}`: Update reservation details
 - **PUT** `localhost:8082/api/v1/reservations/cancel/{id}`: Cancel a reservation
-   
+
+## Load Balancing
+With the configuration above, the API Gateway acts as a load balancer. It uses Eureka to discover service instances and balance requests among them. You can verify load balancing by running multiple instances of your microservices (using different ports) and monitoring request distribution.
+
+### Running Multiple Instances
+To run multiple instances of a microservice:
+- Clone the service to a different directory or set up multiple profiles.
+- Change the server port in the application.yml
+
 ## Conclusion
 
 This microservice project provides a comprehensive simple example for restaurant reservations with secure and efficient operations. The use of Spring Cloud technologies enables robust service communication and scalability, while the testing frameworks ensure reliability and maintainability of the codebase.
