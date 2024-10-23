@@ -33,7 +33,7 @@ This project is a microservice architecture for a restaurant reservation system 
 
 ## Technologies Used
 
-- Java 17
+- Java 17+
 - Spring Boot 3.3.4
 - Spring Cloud 2023.0.3
 - Spring Cloud OpenFeign
@@ -55,7 +55,7 @@ Spring Cloud Contract is preferred over Testcontainers for integration testing a
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kalelo09/restaurant-reservation-microservice.git
+   git clone https://github.com/kalelo09/restaurant-reservation-microservice-example.git
    cd restaurant-reservation-microservice
 2. **Ensure you have the following installed**:
    - Java 17

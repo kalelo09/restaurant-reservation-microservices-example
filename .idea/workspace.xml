@@ -63,15 +63,8 @@
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantControllerIntegrationTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/restaurantreservation/restaurant/RestaurantServiceTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restaurant/src/test/resources/contracts/reservationToRestaurantContracts.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb77a1940e8318c6ce200a7f6bf7c883cadecff" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bb77a1940e8318c6ce200a7f6bf7c883cadecff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6ad9f11d690005082593b41a34e5ff08aceb0410" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf97409f15e1b1563cdb56f88001898eb5950653" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6ad9f11d690005082593b41a34e5ff08aceb0410" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bf97409f15e1b1563cdb56f88001898eb5950653" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/reservation" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -198,7 +191,7 @@
       <updated>1729627456134</updated>
       <workItem from="1729627457573" duration="7906000" />
       <workItem from="1729638929457" duration="5000" />
-      <workItem from="1729669519464" duration="1717000" />
+      <workItem from="1729669519464" duration="4226000" />
     </task>
     <servers />
   </component>
