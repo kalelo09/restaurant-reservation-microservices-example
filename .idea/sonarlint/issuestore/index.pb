@@ -5,8 +5,6 @@ C
 Yapi-gateway/src/main/java/com/restaurantreservation/apigateway/ApiGatewayApplication.java,5\9\595ea09e6bf8f92057ebe1f54bd06238b7980105
 C
 reservation/pom.xml,5\9\592ce93bbfa77531d478fb442224a48cbeeaa96b
-Ü
-Vreservation/src/main/java/com/restaurantreservation/reservation/ReservationConfig.java,6\a\6ad9f11d690005082593b41a34e5ff08aceb0410
 á
 Wreservation/src/main/java/com/restaurantreservation/reservation/ReservationService.java,8\3\8334baf74f924a634b5f53f60c5fb2c212c56f3d
 å
@@ -81,9 +79,11 @@ B
 _eureka-server/src/main/java/com/restaurantreservation/eurekaserver/EurekaServerApplication.java,8\7\87ec3ea6fa77bcfd1228e55cc9d8065dbddfb46f
 à
 Xclients/src/main/java/com/restaurantreservation/clients/restaurant/RestaurantClient.java,4\9\496451723b416927c5da8eaab1ffe7572fff8506
-Ñ
-Tclients/src/test/java/com/restaurantreservation/clients/ClientsApplicationTests.java,b\f\bf97409f15e1b1563cdb56f88001898eb5950653
 Q
 !RestaurantReservationServices.iml,f\9\f97b60430278396fe5c29ede9716189742721232
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+í
+breservation/src/main/java/com/restaurantreservation/reservation/ReservationLoadBalancerConfig.java,b\4\b45c086cfcdc62323c5e4dcfb71c7f5e6f1f04d4
+è
+_restaurant/src/main/java/com/restaurantreservation/restaurant/RestaurantLoadBalancerConfig.java,4\d\4d1c13af26f5835549cf46653ee1abc6cb1c5b55
