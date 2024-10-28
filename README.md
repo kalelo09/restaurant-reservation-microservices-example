@@ -14,6 +14,7 @@ This project is a microservice architecture for a restaurant reservation system 
 - [Users and Roles](#users-and-roles)
 - [API Gateway Routes](#api-gateway-routes)
 - [Load Balancing](#load-balancing)
+- [Monitoring Zipkin](#monitoring)
 - [Conclusion](#conclusion)
 
 ## Features
@@ -83,14 +84,14 @@ Spring Cloud Contract is preferred over Testcontainers for integration testing a
      ```bash
      mvn spring-boot:run
 3. **Start the Restaurant Service**:
-   - Navigate to the restaurant-service module:
+   - Navigate to the restaurant module:
      ```bash
      cd restaurant
    - Run:
      ```bash
      mvn spring-boot:run
 4. **Start the Reservation Service**:
-   - Navigate to the reservation-service module:
+   - Navigate to the reservation module:
      ```bash
      cd reservation
    - Run:
@@ -121,6 +122,11 @@ The following routes are configured in the API Gateway for accessing the microse
 
 ### Login
 - **POST** `localhost:8082/auth/login`: Login
+  ```json
+  {
+   "username": string,
+   "password": string
+  }
 
 ### Restaurant Service Routes
 - **GET** `localhost:8082/api/v1/restaurants`: List all restaurants
@@ -128,6 +134,13 @@ The following routes are configured in the API Gateway for accessing the microse
 - **GET** `localhost:8082/api/v1/restaurants/check_availability/{id}`: Checking table availability 
 - **POST** `localhost:8082/api/v1/restaurants`: Create a new restaurant
 - **PUT** `localhost:8082/api/v1/restaurants/{id}`: Update restaurant information
+  ```json
+  {
+   "name": string,
+   "address": string,
+   "numberTable": number,
+   "numberTableReserved": number
+  }
 
 ### Reservation Service Routes
 - **GET** `localhost:8082/api/v1/reservations`: List all reservations
@@ -139,9 +152,20 @@ The following routes are configured in the API Gateway for accessing the microse
 - **POST** `localhost:8082/api/v1/reservations`: Make a new reservation
 - **PUT** `localhost:8082/api/v1/reservations/{id}`: Update reservation details
 - **PUT** `localhost:8082/api/v1/reservations/cancel/{id}`: Cancel a reservation
+  ```json
+  {
+   "idRestaurant": number,
+   "customerName": string,
+   "reservationDate": date
+  }
 
 ## Load Balancing
 With the configuration above, the API Gateway acts as a load balancer. It uses Eureka to discover service instances and balance requests among them. You can verify load balancing by running multiple instances of your microservices (using different ports) and monitoring request distribution.
+
+## Monitoring Zipkin
+To monitor and trace the requests flowing through your microservices, this project integrates **Zipkin** for distributed tracing. This allows you to track requests from the API Gateway to each service and understand the flow and timing of service interactions, which can be especially useful for debugging and performance analysis.
+
+Run zipkin by Docker or you can download the jar and launch it (you can find all the doc in https://zipkin.io/). you can monitor the application by this url: http://localhost:9411/
 
 ### Running Multiple Instances
 To run multiple instances of a microservice:

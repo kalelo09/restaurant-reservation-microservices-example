@@ -25,6 +25,19 @@ spring:
           predicates:  # Conditions to match incoming requests to this route.
             - Path=/api/v1/restaurants/**  # Matches all requests starting with /api/v1/restaurants/.
 
+# Micrometer configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: trace, health, metrics
+  tracing:
+    sampling:
+      probability: 1.0  # Trace all requests
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
 # Eureka Configuration for Service Discovery
 eureka:
   client:
@@ -45,3 +58,6 @@ logging:
     org.springframework.http: debug  # Enables debug logging for HTTP requests and responses.
     org.springframework.security: debug  # Enables debug logging for Spring Security, useful for tracking authentication and authorization.
     feign: debug  # Enables debug logging for Feign clients, providing insights into HTTP requests made by Feign.
+    io.micrometer.tracing: TRACE  # Enables debug logging for Micrometer Tracing
+    io.micrometer.tracing.brave: TRACE  # Enables debug logging for Brave (if using OpenTelemetry, use 'otel' instead)
+    org.springframework.cloud.sleuth: TRACE  # Optional: Useful if there are any remnants of Sleuth logging

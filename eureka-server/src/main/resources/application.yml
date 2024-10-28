@@ -1,5 +1,10 @@
 # Configuration file for a Spring Boot application acting as a Eureka server
 
+# Spring Framework Configuration
+spring:
+  application:
+    name: eureka-server # Name of the application, used for identification in logs and monitoring.
+
 # Server configuration
 server:
   port: 8761  # The port on which the Eureka server will run
@@ -11,3 +16,16 @@ eureka:
     fetchRegistry: false  # Indicates that this instance will not fetch the registry of services from another Eureka server
   instance:
     hostname: localhost  # The hostname of the Eureka server instance
+
+# Micrometer configuration
+management:
+  tracing:
+    sampling:
+      probability: 1.0 # Sampling rate for tracing. 1.0 means 100% of requests will be traced
+  endpoints:
+    web:
+      exposure:
+        include: trace, health, metrics # Expose selected Actuator endpoints over HTTP
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
